@@ -7,7 +7,7 @@ const app=expres();
 
 app.use(bodyParser.urlencoded({extended:true}));
 
-app.listen("880",function(){
+app.listen( process.env.PORT || "880",function(){
     console.log("Server is running on port 880");
 });
 
